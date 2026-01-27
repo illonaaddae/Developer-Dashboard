@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Developer Dashboard - A curated collection of developer resources, tutorials, and tools"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- CSS link for live-server (Vite will also work with this) -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Developer Dashboard</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Developer Dashboard</h1>
+        <p class="subtitle">Your curated collection of developer resources</p>
+      </header>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search resources by name, category, or description..."
+          aria-label="Search resources"
+        />
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="">All Categories</option>
+        </select>
+      </div>
+
+      <div id="resourceCount" class="resource-count"></div>
+
+      <div id="resources" class="resources-grid"></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
