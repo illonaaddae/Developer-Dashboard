@@ -9,8 +9,6 @@ import { renderResources, populateCategoryFilter } from './modules/render.js';
 // State management
 let filteredResources = [...developerResources];
 
-
-
 /**
  * Filters resources based on search query and category
  */
@@ -38,8 +36,6 @@ function filterResources() {
   renderResources(filteredResources);
 }
 
-
-
 /**
  * Clears all filters and shows all resources
  */
@@ -54,8 +50,6 @@ function clearFilters() {
   filteredResources = [...developerResources];
   renderResources(filteredResources);
 }
-
-
 
 /**
  * Initializes the application
